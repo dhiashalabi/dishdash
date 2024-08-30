@@ -1,50 +1,81 @@
-# React + TypeScript + Vite
+# DishDash
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**DishDash** is a modern web application for managing a menu and handling orders. It features a dynamic interface that adapts to light and dark modes, allowing users to explore and order food items such as burgers and pizzas.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Menu Display**: View a list of available menu items with details such as name, ingredients, price, and an emoji.
+- **Order Management**: Add and remove items from your order and see the total price updated in real-time.
+- **Theming**: Toggle between light and dark themes for a customized viewing experience.
+- **Payment Modal**: Enter payment details and complete your order.
+- **Printable Order Receipt**: Print the order receipt for reference.
 
-## Expanding the ESLint configuration
+## Live Demo
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+You can view a live demo of the application [here](https://dishdash.dhiashalabi.info/). (Replace with the actual demo link)
 
-- Configure the top-level `parserOptions` property like this:
+## Technologies Used
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **React**: JavaScript library for building user interfaces.
+- **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
+- **React Icons**: A collection of customizable icons for React.
+- **Local Storage**: To persist user theme preferences.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Installation
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+To get started with the project locally:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/dhiashalabi/dishdash.git
+    ```
+
+2. **Navigate to the project directory:**
+
+    ```bash
+    cd dishdash
+    ```
+
+3. **Install dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+4. **Start the development server:**
+
+    ```bash
+    npm start
+    ```
+
+   The application will be running at `http://localhost:3000`.
+
+## Usage
+
+- **Toggle Theme**: Click the sun/moon icon in the top-right corner to switch between light and dark modes.
+- **Add Items**: Click the "Add" button next to menu items to add them to your order.
+- **Remove Items**: Click the "Remove" button next to items in your order to remove them.
+- **Complete Order**: Click the "Complete Order" button in the footer to open the payment modal and finalize your purchase.
+- **Print Receipt**: After payment, a print dialog will appear to print your order receipt.
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to the project, please follow these steps:
+
+1. **Fork the repository.**
+2. **Create a new branch (`git checkout -b feature-branch`).**
+3. **Make your changes and commit them (`git commit -am 'Add new feature'`).**
+4. **Push to the branch (`git push origin feature-branch`).**
+5. **Create a new Pull Request.**
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+
+- **Tailwind CSS**: For the beautiful and customizable styling.
+- **React Icons**: For providing a wide range of icons.
+- **React**: For building the interactive UI components.
+
