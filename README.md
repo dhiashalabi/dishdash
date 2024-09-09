@@ -12,7 +12,7 @@
 
 ## Live Demo
 
-You can view a live demo of the application [here](https://dishdash.dhiashalabi.info/). (Replace with the actual demo link)
+You can view a live demo of the application [here](https://dishdash.dhiashalabi.info/).
 
 ## Technologies Used
 
